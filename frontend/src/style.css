@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    color: #000000;
+    background: rgba(14, 48, 131, 0.62);
+    font: 600 16px/18px 'Open Sans', sans-serif
+}
+
+.login-box {
+
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    min-height: 500px;
+    background: url(pictures/pexels-burst-374074.jpg);
+    background-size: 110% 100%;
+}
+
+.login-snip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: rgba(1, 87, 7, 0.68)
+}
+
+.login-snip .login,
+.login-snip .sign-up-form {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+    display: none
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+    text-transform: uppercase
+}
+
+.login-snip .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent
+}
+
+.login-snip .sign-in:checked + .tab,
+.login-snip .sign-up:checked + .tab {
+    color: #fff;
+    border-color: #1161ee
+}
+
+.login-space {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d
+}
+
+.login-space .group {
+    margin-bottom: 15px
+}
+
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button {
+    width: 100%;
+    color: #fff;
+    display: block
+}
+
+.login-space .group .input,
+.login-space .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.form-control {
+    width: 100%;
+    color: #fff;
+    display: block;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.login-space .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle
+
+}
+
+.login-space .group .label {
+    color: #aaa;
+    font-size: 12px
+}
+
+.login-space .group .button {
+    background: #1161ee
+}
+
+.login-space .group .check:checked + label {
+    color: #fff
+}
+
+
+
+.login-snip .sign-in:checked + .tab + .sign-up + .tab + .login-space .login {
+    transform: rotate(0)
+}
+
+.login-snip .sign-up:checked + .tab + .login-space .sign-up-form {
+    transform: rotate(0)
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.foot {
+    text-align: center
+}
+
+.card {
+    width: 500px;
+    left: 100px
+}
+
+::placeholder {
+    color: #b3b3b3
+}
+
+td {
+    word-wrap: break-word;
+    width: 100px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    background: white;
+    word-wrap: break-word;
+
+}
+
+.scrollƒTable {
+    width: 100%;
+    min-width: 400px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.hr {
+    height: 10px;
+    margin: 1px 0 3px 0;
+    background: rgba(255, 255, 255, 0.82)
+}
+
+.btn-xs {
+    float: right;
+
+}
+.btn-xs:hover{
+    background: #71be4d;
+}
+
+.iflogin .btn-xs {
+    float: left;
+}
+
+.col-lg-2 .input {
+    width: 250px;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+.autocom-box li {
+    list-style: none;
+    display: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 450px;
+    margin: 150px auto;
+}
+
+.wrapper .search-input {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+    padding: 0;
+    opacity: 0;
+    background: #ffffff;
+    pointer-events: auto;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.autocom-box li:hover {
+    background: #efefef;
+}
+
+.search-input .icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+}
+
+.like.liked {
+    color: #71be4d;
+}

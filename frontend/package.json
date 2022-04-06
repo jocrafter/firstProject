@@ -1,0 +1,27 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "my first project",
+  "private": true,
+  "scripts": {
+    "clean-dist": "rimraf dist/*",
+    "start": "npm run start-dev",
+    "start-dev": "webpack serve --config=dev.js"
+  },
+  "author": "jonas",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "5.3.2",
+    "webpack": "^5.58.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "webpack-merge": "^5.7.3",
+    "css-loader":"^6.3.0",
+    "style-loader":"^3.3.0"
+
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
